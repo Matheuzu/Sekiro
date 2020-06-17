@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:wght@500&display=swap&family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
+    <title>Sekiro™ Shadow Die Twice</title>
+</head>
+<body>
+    <div id="inicio" class="ajusteBack">
+        <div id="para" class="ajusteBack ajusteWidth">
+            <div id="head" class="ajusteWidth"> 
+                <a href="https://www.activision.com/br/pt/home"><img src="images/logoAct.svg" class="logoAct" alt=""></a>
+                <img src="images/menuIcon.png" id="menuIcon" alt="">
+                <div id="menu">
+                    <ul>
+                        <li class="back">História</li>
+                        <li class="back ajustes">Sekiro</li>
+                        <li class="back">Inimigos</li>
+                    </ul>
+                </div> 
+                <img src="images/ac.png" class="logoSek" alt="">   
+            </div>
+            <div id="frase"><b>Nada irá te deter na retomada de sua honra</b></div>
+            <div id="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="btn ajusteBack">JOGUE AGORA</div>
+        </div>
+        <img src="images/fe.png" id="tile" alt="">
+    </div>
+    <div id="historia">
+        <div id="tit">História</div>
+        <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
+        <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
+        <div class="content">
+            <p>
+                A trama de Sekiro mostra um Shinobi misterioso que busca, obstinadamente, 
+                salvar seu mestre que acaba de ser sequestrado. No Japão Feudal, shinobis 
+                (também conhecidos como ninjas) eram guerreiros mercenários contratados 
+                para realizar tarefas variadas, envolvendo espionagem, assassinatos, roubos
+                 e todo tipo de serviço “inglório”. 
+            </p>
+            <video src="./images/B-1.m4v" loop  autoplay="true" type="video/mp4"></video>
+            <video src="images/C-1.m4v" loop  autoplay="true" type="video/mp4"></video>
+            <p>
+                Explore o Japão do final dos anos 1500, no Período Sengoku, uma era brutal de conflitos constantes de vida e de morte, enquanto encara inimigos épicos em um mundo sombrio e distorcido. Use um arsenal de ferramentas prostéticas mortais e habilidades ninjas poderosas ao mesmo tempo em que alterna furtividade, travessia vertical e combate direto visceral em um confronto sangrento.
+            </p>
+        </div>
+        <div id="linha" class="ajusteWidth"><img src="images/linha1.png" alt=""></div>
+        <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
+        <div id="video">
+            <iframe width="994" height="520" src="https://www.youtube.com/embed/9qLoh37QjtQ" frameborder="0" allow="accelerometer"></iframe>
+        </div>
+        <p>Trilhe seu próprio caminho de vingança nesta premiada aventura da FromSoftware, os criadores de Bloodborne e da franquia Dark Souls.</p>
+    </div>
+
+    <div id="premios" class="ajusteWidth">
+        <img src="images/brush-stroke.png" class="brush ajusteWidth" alt="">
+        <div id="contentPremios">
+            <div id="char">
+                <img src="images/char.png" id="chara" alt="">
+                <img src="images/circle.png" alt="" id="circle" width="500px">
+            </div>
+            <p id="descricao">
+                Você é o "lobo de um braço só", um guerreiro desfigurado 
+                e caído em desgraça que foi resgatado do abismo da morte. 
+                Destinado a proteger um jovem senhor que descende de uma 
+                antiga linhagem, você se tornará alvo de muitos inimigos 
+                cruéis, incluindo o perigoso clã Ashina. Quando o jovem 
+                senhor é capturado, nada irá deter você em uma jornada 
+                arriscada para retomar sua honra — nem mesmo a própria 
+                morte.</p>
+        </div>
+        <img src="images/brush-stroke.png" class="brush2 ajusteWidth" alt="">
+    </div>
+
+    <div id="tit" class="in">Inimigos</div>
+    <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
+    <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
+    
+    <div id="inimigos" class="ajusteWidth">
+        
+        <div class="images responsive">
+            <div class="boxInimigo" id="lastClone">
+                <img src="images/inimigo1.png" alt="" >
+            </div>
+            <div class="boxInimigo">
+                <img src="images/inimigo2.png" alt="" >
+            </div>
+            <div class="boxInimigo">
+                <img src="images/inimigo3.png" alt="" >
+            </div>
+            <div class="boxInimigo">
+                <img src="images/inimigo4.png" alt="" >
+            </div>
+            <div class="boxInimigo">
+                <img src="images/inimigo5.png" alt="" >
+            </div>
+            <div class="boxInimigo" id="firstClone">
+                <img src="images/inimigo7.png" alt="" >
+            </div>
+        </div>
+        
+    </div>
+    <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
+    <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
+    <script>
+        $('#menuIcon').on('click', function(){
+            $('#menu ul').slideToggle(800);
+        });
+
+    </script>
+</body>
+</html>
