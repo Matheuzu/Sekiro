@@ -492,5 +492,6 @@ body, html{
     #premios{
         background: url('../images/baclAll.jpg') fixed;
         height: 90.8%; 
+        overflow: hidden;
     }
 }
