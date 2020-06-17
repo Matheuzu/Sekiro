@@ -78,40 +78,41 @@
         </div>
         <img src="images/brush-stroke.png" class="brush2 ajusteWidth" alt="">
     </div>
-
-    <div id="tit" class="in" data-aos="fade-down">Inimigos</div>
-    <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
-    <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
     
     <div id="inimigos" class="ajusteWidth">
-        
+        <div id="tit" class="in" data-aos="fade-down">Inimigos</div>
+        <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
+        <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>    
         <div class="images responsive">
             <div class="boxInimigo" id="lastClone" data-aos="flip-left">
-                <i class="fas fa-play ajustePlay"></i>
+                <i class="fas fa-play ajustePlay" state="https://www.youtube.com/embed/1e3tZlpMGbM"></i>
                 <img src="images/inimigo1.png" alt="" >
             </div>
             <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo2.png" alt="" >
-                <i class="fas fa-play ajustePlay"></i>
+                <i class="fas fa-play ajustePlay" state="https://www.youtube.com/embed/p3CEBQOx0Iw"></i>
             </div>
             <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo3.png" alt="" >
-                <i class="fas fa-play ajustePlay"></i>
+                <i class="fas fa-play ajustePlay" state="https://www.youtube.com/embed/ofwS1-jsd18"></i>
             </div>
             <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo4.png" alt="" >
-                <i class="fas fa-play ajustePlay"></i>
+                <i class="fas fa-play ajustePlay" state="https://www.youtube.com/embed/dR3k2Fonmrs"></i>
             </div>
             <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo5.png" alt="" >
-                <i class="fas fa-play ajustePlay"></i>
+                <i class="fas fa-play ajustePlay" state="https://www.youtube.com/embed/EmSGoIp8HfE"></i>
             </div>
             <div class="boxInimigo" id="firstClone" data-aos="flip-left">
                 <img src="images/inimigo7.png" alt="" >
-                <i class="fas fa-play ajustePlay"></i>
+                <i class="fas fa-play ajustePlay" state="https://www.youtube.com/embed/ygg_GBsoIQ4"></i>
             </div>
         </div>
-        
+        <div id="videoIni">
+            <i class="fas fa-times-circle close" onclick="close()"></i>
+            <iframe width="1265" height="720" src="" autoplay="true"></iframe>
+        </div>
     </div>
     <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
     <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
@@ -140,6 +141,18 @@
                 scrollTop: $("#inimigos").offset().top},
                 2500);
         });
+
+        $(".ajustePlay").click(function() {
+            var StateName = $(this).attr("state");
+            console.log(StateName);
+            $('#videoIni').slideToggle(800);
+            $('#videoIni iframe').attr("src", StateName);
+        });
+        $(".close").click(function() {
+            $('#videoIni').slideToggle(800);
+            $('#videoIni').pause()
+        });
+
     </script>
 </body>
 </html>

@@ -21,10 +21,7 @@ body, html{
     margin: 2vw 0;
     text-align: center;
 }
-
-#linha2{
-    display: none;
-}
+#linha2{display: none;}
 #tit{
     background: url('../images/backJog1.png') no-repeat;
     background-position: center center;
@@ -229,9 +226,36 @@ body, html{
     left: 35%;
     transition: 1s;
 }
-
 .ajustePlay:hover{
     font-size: 3.5vw;
+}
+#videoIni{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgb(0, 0, 0, 0.95);
+    padding-top: 7%;
+    display: none;
+    text-align: center;
+}
+#videoIni iframe{
+    position: relative;
+    outline: none;
+    border: 10px solid #fff;
+    width: 1000px;
+    height: 570px;
+}
+.close{
+    position: absolute;
+    font-size: 40px;
+    top: 6%;
+    right: 13.8%;
+    max-width: 32px;
 }
 
 @media screen and (max-width: 994px){
@@ -366,6 +390,12 @@ body, html{
     .in{
         margin-top: 10vw;
     }
+    #videoIni iframe{
+        max-width: 90%;
+        max-height: 50%;
+    }
+    #videoIni {padding-top: 50%;}
+    .close{right: 7%; top: 4%}
 }
 
 @media screen and (min-width: 1370px){
@@ -494,7 +524,6 @@ body, html{
         position: absolute;
         bottom: 70px;
     }
-
 }
 
 @media screen and (min-width: 1280px) and (max-height: 800px){
@@ -503,8 +532,23 @@ body, html{
         background-size: 120%;
     }
     #premios{
-        background: url('../images/baclAll.jpg') fixed;
         height: 90.8%; 
         overflow: hidden;
     }
+    .close{
+        right: 11.8%;
+    }
+}
+
+
+::-webkit-scrollbar-track {
+    background-color:#000;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #6b0707;
+    border-radius: 5px;
 }
