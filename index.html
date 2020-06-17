@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css" />
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:wght@500&display=swap&family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
@@ -17,9 +18,9 @@
                 <img src="images/menuIcon.png" id="menuIcon" alt="">
                 <div id="menu">
                     <ul>
-                        <li class="back">História</li>
+                        <li class="back" id="hist">História</li>
                         <li class="back ajustes">Sekiro</li>
-                        <li class="back">Inimigos</li>
+                        <li class="back" id="ini">Inimigos</li>
                     </ul>
                 </div> 
                 <img src="images/a.png" class="logoSek" alt="">   
@@ -33,10 +34,10 @@
         <img src="images/fe.png" id="tile" alt="">
     </div>
     <div id="historia">
-        <div id="tit">História</div>
+        <div id="tit" data-aos="fade-down">História</div>
         <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
         <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
-        <div class="content">
+        <div class="content" data-aos="fade-up">
             <p>
                 A trama de Sekiro mostra um Shinobi misterioso que busca, obstinadamente, 
                 salvar seu mestre que acaba de ser sequestrado. No Japão Feudal, shinobis 
@@ -44,28 +45,28 @@
                 para realizar tarefas variadas, envolvendo espionagem, assassinatos, roubos
                  e todo tipo de serviço “inglório”. 
             </p>
-            <video src="./images/B-1.m4v" loop  autoplay="true" type="video/mp4"></video>
-            <video src="images/C-1.m4v" loop  autoplay="true" type="video/mp4"></video>
-            <p>
+            <video src="./images/B-1.m4v" loop  autoplay="true" type="video/mp4" data-aos="fade-down"></video>
+            <video src="images/C-1.m4v" loop  autoplay="true" type="video/mp4" data-aos="fade-down"></video>
+            <p data-aos="fade-up">
                 Explore o Japão do final dos anos 1500, no Período Sengoku, uma era brutal de conflitos constantes de vida e de morte, enquanto encara inimigos épicos em um mundo sombrio e distorcido. Use um arsenal de ferramentas prostéticas mortais e habilidades ninjas poderosas ao mesmo tempo em que alterna furtividade, travessia vertical e combate direto visceral em um confronto sangrento.
             </p>
         </div>
         <div id="linha" class="ajusteWidth"><img src="images/linha1.png" alt=""></div>
         <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
-        <div id="video">
+        <div id="video" data-aos="fade-right">
             <iframe width="994" height="520" src="https://www.youtube.com/embed/9qLoh37QjtQ" frameborder="0" allow="accelerometer"></iframe>
         </div>
-        <p>Trilhe seu próprio caminho de vingança nesta premiada aventura da FromSoftware, os criadores de Bloodborne e da franquia Dark Souls.</p>
+        <p data-aos="fade-left">Trilhe seu próprio caminho de vingança nesta premiada aventura da FromSoftware, os criadores de Bloodborne e da franquia Dark Souls.</p>
     </div>
 
     <div id="premios" class="ajusteWidth">
         <img src="images/brush-stroke.png" class="brush ajusteWidth" alt="">
         <div id="contentPremios">
-            <div id="char">
+            <div id="char" data-aos="flip-up">
                 <img src="images/char.png" id="chara" alt="">
                 <img src="images/circle.png" alt="" id="circle" width="500px">
             </div>
-            <p id="descricao">
+            <p id="descricao" data-aos="fade-left">
                 Você é o "lobo de um braço só", um guerreiro desfigurado 
                 e caído em desgraça que foi resgatado do abismo da morte. 
                 Destinado a proteger um jovem senhor que descende de uma 
@@ -78,42 +79,67 @@
         <img src="images/brush-stroke.png" class="brush2 ajusteWidth" alt="">
     </div>
 
-    <div id="tit" class="in">Inimigos</div>
+    <div id="tit" class="in" data-aos="fade-down">Inimigos</div>
     <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
     <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
     
     <div id="inimigos" class="ajusteWidth">
         
         <div class="images responsive">
-            <div class="boxInimigo" id="lastClone">
-                <i class="fas fa-play"></i>
+            <div class="boxInimigo" id="lastClone" data-aos="flip-left">
+                <i class="fas fa-play ajustePlay"></i>
                 <img src="images/inimigo1.png" alt="" >
             </div>
-            <div class="boxInimigo">
+            <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo2.png" alt="" >
+                <i class="fas fa-play ajustePlay"></i>
             </div>
-            <div class="boxInimigo">
+            <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo3.png" alt="" >
+                <i class="fas fa-play ajustePlay"></i>
             </div>
-            <div class="boxInimigo">
+            <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo4.png" alt="" >
+                <i class="fas fa-play ajustePlay"></i>
             </div>
-            <div class="boxInimigo">
+            <div class="boxInimigo" data-aos="flip-left">
                 <img src="images/inimigo5.png" alt="" >
+                <i class="fas fa-play ajustePlay"></i>
             </div>
-            <div class="boxInimigo" id="firstClone">
+            <div class="boxInimigo" id="firstClone" data-aos="flip-left">
                 <img src="images/inimigo7.png" alt="" >
+                <i class="fas fa-play ajustePlay"></i>
             </div>
         </div>
         
     </div>
     <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
     <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
+    <script src="js/aos.js"></script>
     <script>
         $('#menuIcon').on('click', function(){
             $('#menu ul').slideToggle(800);
         });
 
+        AOS.init({
+            duration: 1500,
+        });
+
+        $("#hist").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#historia").offset().top},
+                'slow');
+        });
+        $("#hist").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#historia").offset().top},
+                'slow');
+        });
+        $("#ini").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#inimigos").offset().top},
+                2500);
+        });
     </script>
 </body>
 </html>

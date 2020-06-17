@@ -39,6 +39,7 @@ body, html{
     color: white;  
     text-align: center;
     background-size: 100%;
+    overflow: hidden;
 }
 #para{
     background: url('../images/MadeupRapidChuckwalla-max-1mb.gif');
@@ -218,7 +219,20 @@ body, html{
     margin: 10px 40px 0 0;
     transition: 1s;
 }
+.ajustePlay{
+    position: absolute;
+    font-size: 3vw;
+    padding: 20px;
+    background: rgb(128, 6, 6, 0.5);
+    color: #fff;
+    top: 35%;
+    left: 35%;
+    transition: 1s;
+}
 
+.ajustePlay:hover{
+    font-size: 3.5vw;
+}
 
 @media screen and (max-width: 994px){
     #frase{
@@ -253,9 +267,8 @@ body, html{
         width: 100%;
     }
     #menuIcon{
-        float: right;
         display: block;
-        width: 40px;
+        width: 30px;
         transition: 1s;
     }
     #head{
