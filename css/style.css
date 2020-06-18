@@ -118,10 +118,11 @@ body, html{
     background: url('../images/backJog.png') no-repeat;
     background-position: center center;
     background-size: 30%;
-    height: 15%;
+    height: 16%;
     font-size: 4vw;
     text-shadow: 1px 1px #000;
     transition: 1s letter-spacing;
+    padding-top: 0.5vw;
 }
 .btn:hover{
     cursor: pointer;
@@ -628,6 +629,9 @@ footer ul li{
     #chara, #circle{
         top: 0vw;
     } 
+    .btn{
+        padding-top: 0.9vw;
+    }
 }
 
 @media screen and (width: 375px) and (height: 812px){
