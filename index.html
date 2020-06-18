@@ -19,7 +19,7 @@
                 <div id="menu">
                     <ul>
                         <li class="back" id="hist">História</li>
-                        <li class="back ajustes">Sekiro</li>
+                        <li class="back ajustes comprar">Sekiro</li>
                         <li class="back" id="ini">Inimigos</li>
                     </ul>
                 </div> 
@@ -50,6 +50,7 @@
             <p data-aos="fade-up">
                 Explore o Japão do final dos anos 1500, no Período Sengoku, uma era brutal de conflitos constantes de vida e de morte, enquanto encara inimigos épicos em um mundo sombrio e distorcido. Use um arsenal de ferramentas prostéticas mortais e habilidades ninjas poderosas ao mesmo tempo em que alterna furtividade, travessia vertical e combate direto visceral em um confronto sangrento.
             </p>
+            <div class="none" data-aos="fade-down"><video src="images/C-1.m4v" loop  autoplay="true" type="video/mp4" ></video></div>
         </div>
         <div id="linha" class="ajusteWidth"><img src="images/linha1.png" alt=""></div>
         <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
@@ -116,10 +117,9 @@
     </div>
     <div id="linha2" class="ajusteWidth"><img src="images/linha2.png"  alt=""></div>
     <div id="linha" class="ajusteWidth"><img src="images/linha1.png"  alt=""></div>
-    <div id="comprar">
+    <div id="comprar" class="ajusteWidth ajusteBack">
         <img src="images/brush-stroke.png" class="brush ajusteWidth" alt="">
         <div id="tit" class="in" data-aos="fade-down">Comprar</div>
-
         <img src="images/brush-stroke.png" class="brush3 ajusteWidth" alt="">
     </div>
     <footer>
@@ -157,6 +157,11 @@
         $("#ini").click(function() {
             $('html,body').animate({
                 scrollTop: $("#inimigos").offset().top},
+                2500);
+        });
+        $(".comprar").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#comprar").offset().top},
                 2500);
         });
 
