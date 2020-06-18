@@ -202,9 +202,7 @@ body, html{
     margin: auto; 
     width: 994px;
 }
-.images{
-    display: inline-block;
-}
+.images{display: inline-block;}
 .boxInimigo{
     width: 30%;
     display: inline-block;
@@ -226,9 +224,7 @@ body, html{
     left: 35%;
     transition: 1s;
 }
-.ajustePlay:hover{
-    font-size: 3.5vw;
-}
+.ajustePlay:hover{font-size: 3.5vw;}
 #videoIni{
     position: fixed;
     top: 50%;
@@ -257,6 +253,52 @@ body, html{
     right: 13.8%;
     max-width: 32px;
 }
+#comprar{
+    background: url('../images/baclAll.jpg') fixed;
+    text-align: center;
+}
+#comprarback{
+    padding: 50px;
+    width: 0%;
+}
+#comprar ul li img{
+    width: 800px;
+    border: 10px solid #6b0707;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(177, 177, 177);
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+footer img{
+    padding: 10px;
+    margin: 10px 30px;
+    width: 200px;
+    vertical-align: middle;
+}
+
+footer ul{
+    margin: 0 auto;
+    width: 60%;
+    border-top: 2px solid rgb(177, 177, 177);
+}
+
+footer ul li{
+    padding: 5px 0px 5px 00px;
+    display: inline-block;
+    list-style: none;
+    font-size: 40px;
+}
+.brush3{
+    transform: rotate(180deg);
+}
+
+
 
 @media screen and (max-width: 994px){
     #frase{
@@ -368,28 +410,18 @@ body, html{
         transition: 1s;
         overflow: hidden;
         transition: none
-    } #chara:hover ~ #circle{
-        transform: rotate(0deg);
-    }
-    .brush2{
-        top: 64vw;
-    }
-    #premios{
-        height: 90%; 
-    }
+    } 
+    #chara:hover ~ #circle{transform: rotate(0deg);}
+    .brush2{top: 64vw;}
+    #premios{height: 90%; }
     #circle{ z-index: 0}
     #inimigos{width: 80%;}
-
-    .boxInimigo{
-        display: block;
-    }
+    .boxInimigo{display: block;}
     .boxInimigo img{
         width: 80vw;
         margin: 10px 0 0 0;
     }
-    .in{
-        margin-top: 10vw;
-    }
+    .in{margin-top: 10vw;}
     #videoIni iframe{
         max-width: 90%;
         max-height: 50%;
@@ -414,30 +446,19 @@ body, html{
         background-size: 100%;
         background-position:  100% 100%;;
     }
-    #logo{
-        width: 100%;
-    }
-    #logo img{
-        width: 40%;
-    }
-    #logo img:hover{
-        width: 42%;
-    }
-    #frase{
-        font-size: 1vw;
-    }
-    #premios{
-        background-size: 120%;
-    }
+    #logo{width: 100%;}
+    #logo img{width: 40%;}
+    #logo img:hover{width: 42%;}
+    #frase{font-size: 1vw;}
+    #premios{background-size: 120%;}
+
     #chara, #circle{
         left: 150px;
         width: 35vw;
         z-index: 1;
         transition: 0s;
     }
-    #circle{
-        transition: 1s;
-    }
+    #circle{transition: 1s;}
     #descricao{
         font-family: 'PT Serif', serif;
         color: #000;
@@ -449,12 +470,8 @@ body, html{
         margin-right: 7vw;
         line-height: 1.6;
     }
-    .brush2{
-        top: 32px;
-    }
-    .in{
-        margin-top: 25px;
-    }
+    .brush2{top: 32px;}
+    .in{margin-top: 25px;}
     #circle{z-index: 0;}
     #historia video{
         width: 29vw;
@@ -499,17 +516,13 @@ body, html{
         width: 1320px;
         height: 30px;
     }
-    .content{
-        width: 1300px;
-    }
+    .content{width: 1300px;}
     #video iframe{
         margin-bottom: 40px;
         height: 700px;
         width: 1250px;
     }
-    #frase{
-        padding-top: 7vw;
-    }
+    #frase{padding-top: 7vw;}
     .btn{
         background-size: 28%;
         padding-top: 10px;
@@ -525,7 +538,6 @@ body, html{
         bottom: 70px;
     }
 }
-
 @media screen and (min-width: 1280px) and (max-height: 800px){
     #inicio{
         background-position: 55% 100%;
@@ -535,11 +547,15 @@ body, html{
         height: 90.8%; 
         overflow: hidden;
     }
-    .close{
-        right: 11.8%;
+    .close{right: 11.8%;}
+    
+    footer ul li{
+        padding: 5px 30px 5px 30px;
+        display: inline-block;
+        list-style: none;
+        font-size: 40px;
     }
 }
-
 
 ::-webkit-scrollbar-track {
     background-color:#000;
