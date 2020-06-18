@@ -173,7 +173,7 @@ body, html{
 #char{position: relative;}
 #chara, #circle{
     position: absolute;
-    top: 25px;
+    top: 0px;
     left: 80px;
     width: 40vw;
     z-index: 1;
@@ -617,7 +617,6 @@ footer ul li{
         margin-right: 4vw;
         margin-left: 1vw;
     }
-    .none{display: none;}
 }
 
 @media screen and (min-width: 1900px) and (max-height: 1085px){
@@ -626,6 +625,9 @@ footer ul li{
 
 @media screen and (width: 1920px) and (height: 1080px){
     #frase{padding-top: 9.5vw;}
+    #chara, #circle{
+        top: 0vw;
+    } 
 }
 
 ::-webkit-scrollbar-track {
