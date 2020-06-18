@@ -630,6 +630,10 @@ footer ul li{
     } 
 }
 
+@media screen and (width: 375px) and (height: 812px){
+    #frase{padding-top: 86.5vw;}
+}
+
 ::-webkit-scrollbar-track {
     background-color:#000;
 }
