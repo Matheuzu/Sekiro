@@ -668,6 +668,16 @@ footer ul li{
     #frase{padding-top: 8.5vw;}
 }
 
+@media screen and (width: 1920px) and (height: 1080px){
+    #premios{
+        height: 87%; 
+    }
+    #frase{padding-top: 9.5vw;}
+    #comprar{
+        height: 110%;
+    }
+}
+
 ::-webkit-scrollbar-track {
     background-color:#000;
 }
