@@ -690,6 +690,12 @@ footer ul li{
     .content{
         font-size: 0.1vw;
     }
+    #historia iframe{
+        height: 300px;
+    }
+    #videoIni iframe{
+        height: 600px;
+    }
 }
 ::-webkit-scrollbar-track {
     background-color:#000;
