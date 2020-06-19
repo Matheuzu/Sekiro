@@ -101,20 +101,20 @@ body, html{
 #logo img:hover{
     width: 52%;
 }
-.btn{
+.btn span{
     background: url('../images/backJog.png') no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     height: 16%;
     font-size: 4vw;
     text-shadow: 1px 1px #000;
     transition: 1s letter-spacing;
     padding-top: 0.5vw;
     position: absolute;
-    bottom: 0;
+    bottom: -2%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30%;
+    width: 33%;
 }
 .btn:hover{
     cursor: pointer;
@@ -381,7 +381,7 @@ footer ul li{
         display: absolute;
         bottom: 10px;
         font-size: 10vw;
-        background-size: 100%;
+        background-size: cover;
         padding-top: 4%;
         z-index: 1;
         width: 80%;
@@ -514,9 +514,9 @@ footer ul li{
         height: 700px;
         width: 1250px;
     }
-    #frase{padding-top: 15%;}
+    #frase{padding-top: 10%;}
     .btn{
-        background-size: 100%;
+        background-size: cover;
         height: 18.5%;
         width: 32%;
     }
