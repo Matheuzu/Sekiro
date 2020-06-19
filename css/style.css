@@ -8,6 +8,7 @@ body, html{
     color: #fff;
 }
 .none{display: none;}
+.textC{text-align: center;}
 .ajusteBack{
     -webkit-background-size: cover;
     background-size: cover;
@@ -19,24 +20,19 @@ body, html{
 
 #tile{display: none;}
 
-#linha{
-    margin: 2vw 0;
-    text-align: center;
-}
+#linha{margin: 2vw 0;}
 #linha2{display: none;}
 #tit{
     background: url('../images/backJog1.png') no-repeat;
     background-position: center center;
     background-size: 20%;
     padding: 2vw;
-    text-align: center;
     font-size: 3vw;
 }
 #inicio{
     background: url('../images/walp1.jpg');
     height: 100%;
     color: white;  
-    text-align: center;
     background-size: 100%;
     overflow: hidden;
 }
@@ -57,11 +53,7 @@ body, html{
     border-left: 0.1vw solid #fff;
 }
 #menuIcon{display: none;}
-#menu{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-}
+#menu{width: 70%;}
 #menu, .logoAct, .logoSek{
     display: inline-block;
     vertical-align: top;
@@ -132,7 +124,6 @@ body, html{
     background: #000;
     margin: 0 auto;
     color: #fff;
-    text-align: center;
 }
 .content{
     width: 994px;
@@ -181,9 +172,7 @@ body, html{
     transition: 1s transform;
 } 
 #circle{ z-index: 0; transition: 1s }
-#chara:hover ~ #circle{
-    transform: rotate(50deg);
-}
+#chara:hover ~ #circle{transform: rotate(50deg);}
 #descricao{
     font-family: 'PT Serif', serif;
     color: #000;
@@ -238,7 +227,6 @@ body, html{
     background: rgb(0, 0, 0, 0.95);
     padding-top: 7%;
     display: none;
-    text-align: center;
 }
 #videoIni iframe{
     position: relative;
@@ -267,18 +255,13 @@ body, html{
     z-index: 0;
     transition: 1s;
 }
-.imgComprar:hover ~ #circle2{
-    transform: rotate(30deg);
-}
+.imgComprar:hover ~ #circle2{transform: rotate(30deg);}
 .imgComprar{
     width: 25%;padding-top: 2vw;
     position: relative;
     z-index: 1;
 }
-
 footer{
-    width: 100%;
-    text-align: center;
     color: rgb(177, 177, 177);
     font-family: 'PT Serif', serif;
     font-size: 20px;
@@ -286,18 +269,13 @@ footer{
     position: absolute;
     z-index: 100;
 }
-
 footer img{
     padding: 10px;
     margin: 10px 30px;
     width: 200px;
     vertical-align: middle;
 }
-
-footer ul{
-    width: 100%;
-}
-
+footer ul{width: 100%;}
 footer ul li{
     padding: 5px 0px 5px 00px;
     display: inline-block;
@@ -470,7 +448,6 @@ footer ul li{
     #premios{height: 585px;}
     .brush2{margin-bottom: -71vw;}
 }
-
 @media screen and (min-width: 1370px){
     #trilhe{width: 50%;}
     #historia p{
@@ -602,19 +579,16 @@ footer ul li{
         margin-left: 1vw;
     }
 }
-
 @media screen and (min-width: 1900px) and (max-height: 1085px){#frase{padding-top: 8.5vw;}}
 @media screen and (width: 1920px) and (height: 1080px){
     #frase{padding-top: 9.5vw;}
     .btn{padding-top: 0.9vw;}
 }
-
 @media screen and (width: 375px) and (height: 812px){
     #frase{padding-top: 86.5vw;}
     #premios{height: 600px;}
     .brush2{margin-bottom: -68vw;}
 }
-
 ::-webkit-scrollbar-track {
     background-color:#000;
 }
