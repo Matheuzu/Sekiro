@@ -37,6 +37,7 @@ body, html{
     background-size: 100%;
     overflow: hidden;
     position: relative;
+    background-position: 50% 50%;
 }
 #para{
     background: url('../images/MadeupRapidChuckwalla-max-1mb.gif');
@@ -584,17 +585,13 @@ footer ul li{
     #frase{padding-top: 50vw;}
     #head{height: 13.5%;}
     #menuIcon{margin-top: 3vw; width: 12%;}
-    #historia{
-        padding: 3vw;
-    }
+    #historia{padding: 3vw;}
     #historia iframe{
         margin: 2vw 0 0vw 0;
         width: 80%;
         height: 400px;
     }
-    #premios{
-        height: 112%;
-    }
+    #premios{height: 112%;}
     #chara, #circle{
         top: 500px;
         left: 100px;
