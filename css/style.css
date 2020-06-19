@@ -34,10 +34,11 @@ body, html{
     background: url('../images/walp1.jpg');
     height: 100%;
     color: white;  
-    background-size: 100%;
+    background-size: cover;
     overflow: hidden;
     position: relative;
     background-position: 50% 50%;
+    width: 100%;
 }
 #para{
     background: url('../images/MadeupRapidChuckwalla-max-1mb.gif');
@@ -82,8 +83,8 @@ body, html{
 }
 #frase{
     width: 100%;
+    padding-top: 12%;
     font-size: 1.3vw;
-    padding-top: 12vw;
     transition: all 2s ease;
     font-family: 'PT Serif', serif;
     letter-spacing: 3px;
@@ -99,10 +100,6 @@ body, html{
 }
 #logo img:hover{
     width: 52%;
-}
-#centro{
-    top: 50%;
-    left: 50%;
 }
 .btn{
     background: url('../images/backJog.png') no-repeat;
@@ -290,9 +287,9 @@ footer ul li{
     transform: rotate(180deg);
     margin-bottom: -6px;
 }
-@media screen and (max-width: 994px){  
+@media screen and (max-width: 1024px){  
     #frase{
-        padding-top: 60vw;
+        padding-top: 75%;
         font-size: 2.5vw;
         text-shadow: 1px 1px #000;
     }
@@ -334,7 +331,7 @@ footer ul li{
         vertical-align: top;
         background: rgba(0, 0, 0);
         width: 100%;
-        height: 11%;
+        height: auto;
     }
     #historia p, #historia video{
         display: block;
@@ -351,7 +348,7 @@ footer ul li{
     #tile{display: block; position: absolute; width: 100%; bottom:0;}
     .logoSek{display: none;}
     #inicio{
-        background-size: 100%;   
+        background-size: cover;   
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center center;}
@@ -385,7 +382,7 @@ footer ul li{
         bottom: 10px;
         font-size: 10vw;
         background-size: 100%;
-        padding-top: 13px;
+        padding-top: 4%;
         z-index: 1;
         width: 80%;
     }
@@ -457,13 +454,13 @@ footer ul li{
         background: none;
     }
     #inicio{
-        background-size: 100%;
+        background-size: cover;
         background-position:  100% 100%;;
     }
     #logo{width: 100%;}
     #logo img{width: 40%;}
     #logo img:hover{width: 42%;}
-    #frase{font-size: 1vw;}
+    #frase{font-size: 1vw; }
     #premios{background-size: 120%}
 
     #chara, #circle{
@@ -517,12 +514,11 @@ footer ul li{
         height: 700px;
         width: 1250px;
     }
-    #frase{padding-top: 7vw;}
+    #frase{padding-top: 15%;}
     .btn{
         background-size: 100%;
-        padding-top: 10px;
-        height: 165px;
-        width: 30%;
+        height: 18.5%;
+        width: 32%;
     }
     #historia{padding: 4vw 0}
     #inimigos{
@@ -543,7 +539,7 @@ footer ul li{
 @media screen and (min-width: 1280px) and (max-height: 730px){
     #inicio{
         background-position: 55% 100%;
-        background-size: 120%;
+        background-size: cover;
     }
     .close{right: 11.8%;}
     
@@ -564,26 +560,26 @@ footer ul li{
         margin-left: 1vw;
     }
 }
-@media screen and (min-width: 1900px) and (max-height: 1085px){#frase{padding-top: 8.5vw;}}
+@media screen and (min-width: 1900px) and (max-height: 1085px){#frase{padding-top: 10%;}}
 @media screen and (width: 1920px) and (height: 1080px){
-    #frase{padding-top: 9.5vw;}
+    #frase{padding-top: 15%;}
     .btn{padding-top: 0.9vw;}
 }
 @media screen and (width: 375px) and (height: 812px){
-    #frase{padding-top: 86.5vw;}
+    #frase{padding-top: 90%;}
     #premios{height: 600px;}
     .brush2{margin-bottom: -68vw;}
-    #head{
-        height: 9%;
+    .btn{
+        padding-top: 7vw;
     }
 }
 @media screen and (width: 411px) and (height: 823px){
-    #head{height: 9.5%;}
+    #head{height: auto;}
     #menuIcon{margin-top: 3.5vw;}
 }
 @media screen and (width: 768px) and (max-height: 1030px){
-    #frase{padding-top: 50vw;}
-    #head{height: 13.5%;}
+    #frase{padding-top: 50%;}
+    #head{height: auto;}
     #menuIcon{margin-top: 3vw; width: 12%;}
     #historia{padding: 3vw;}
     #historia iframe{
@@ -617,7 +613,57 @@ footer ul li{
         width: 100%;
         height: 100%;
     }
+    .btn{
+        padding-top: 1vw;
+    }
 }
+
+@media screen and (width: 1024px) and (max-height: 1366px){
+    #frase{padding-top: 52%;}
+    #menuIcon{margin-top: 3vw; width: 12%;}
+    #historia{padding: 3vw;}
+    #historia iframe{
+        margin: 2vw 0 0vw 0;
+        width: 80%;
+        height: 400px;
+    }
+    #premios{height: 112%; background-size: cover; background-position: center center;}
+    #chara, #circle{
+        top: 670px;
+        left: 100px;
+    } 
+    .btn{
+        padding-top: 1vw;
+    }
+    #historia p, #historia video{
+        padding: 0 5vw;
+        font-size: 4vw;
+    }
+    #linha{margin: 3vw 0;}
+    .ajustePlay{
+        font-size: 10vw;
+        top: 35%;
+        padding: 30px;
+        left: 115%;
+    }
+    .ajustePlay:hover{
+        font-size: 10vw;
+        top: 35%;
+        padding: 30px;
+        left: 115%;
+    }
+    #videoIni iframe{
+        width: 100%;
+        height: 500vw;
+    }
+    #comprar{
+        background-size: cover;
+    }
+    .brush2{
+        margin-bottom: -72%;
+    }
+}
+
 
 ::-webkit-scrollbar-track {
     background-color:#000;
