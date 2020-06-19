@@ -90,17 +90,13 @@ body, html{
     letter-spacing: 3px;
     text-shadow: 1px 2px #000;
 }
-#logo{
-    transition: all 2s ease;
-}
+#logo{transition: all 2s ease;}
 #logo img{
     margin: 0 auto;
     width: 50%;
     transition: 1s ;
 }
-#logo img:hover{
-    width: 52%;
-}
+#logo img:hover{width: 52%;}
 .btn{
     background: url('../images/backJog.png') no-repeat;
     background-position: center center;
