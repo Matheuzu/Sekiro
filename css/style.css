@@ -24,9 +24,10 @@ body, html{
 #linha2{display: none;}
 #tit{
     background: url('../images/backJog1.png') no-repeat;
-    background-position: center center;
+    background-position: 50% 50%;
     background-size: 20%;
     padding: 2vw;
+    background-repeat: no-repeat;
     font-size: 3vw;
 }
 #inicio{
@@ -35,6 +36,7 @@ body, html{
     color: white;  
     background-size: 100%;
     overflow: hidden;
+    position: relative;
 }
 #para{
     background: url('../images/MadeupRapidChuckwalla-max-1mb.gif');
@@ -53,7 +55,7 @@ body, html{
     border-left: 0.1vw solid #fff;
 }
 #menuIcon{display: none;}
-#menu{width: 70%;}
+#menu{width: 60%;}
 #menu, .logoAct, .logoSek{
     display: inline-block;
     vertical-align: top;
@@ -67,24 +69,16 @@ body, html{
     text-shadow: 1px 1px #000;
     width: 20%;
     align-content: center;
+    list-style: none;
 }
 #menu ul li:hover{
-    padding: 15px 80px 10px 40px;
     cursor: pointer;
-    letter-spacing: 0.2vw;
     transition: 1s
 }
-#menu ul li:nth-child(2){
-    font-size: 2.6vw;
-    padding: 15px 80px 30px 50px;
-    width: 26%;
-}
-#menu ul li:nth-child(2):hover{padding: 15px 45px 30px 15px;}
 .back{
     background: url('../images/backJog1.png') no-repeat;
     background-size: 100%;
 }
-.back:nth-child(2){background-size: 215px;}
 #frase{
     width: 100%;
     font-size: 1.3vw;
@@ -95,7 +89,6 @@ body, html{
     text-shadow: 1px 2px #000;
 }
 #logo{
-    padding: 1vw 0 10vw 0;
     transition: all 2s ease;
 }
 #logo img{
@@ -106,15 +99,24 @@ body, html{
 #logo img:hover{
     width: 52%;
 }
+#centro{
+    top: 50%;
+    left: 50%;
+}
 .btn{
     background: url('../images/backJog.png') no-repeat;
     background-position: center center;
-    background-size: 30%;
+    background-size: 100%;
     height: 16%;
     font-size: 4vw;
     text-shadow: 1px 1px #000;
     transition: 1s letter-spacing;
     padding-top: 0.5vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
 }
 .btn:hover{
     cursor: pointer;
@@ -277,7 +279,7 @@ footer img{
 }
 footer ul{width: 100%;}
 footer ul li{
-    padding: 5px 0px 5px 00px;
+    width: 6%;
     display: inline-block;
     list-style: none;
     font-size: 40px;
@@ -293,11 +295,13 @@ footer ul li{
         font-size: 2.5vw;
         text-shadow: 1px 1px #000;
     }
-    #logo{padding: 1vw 0 42vw 0;}
-
     #logo img{width: 90%;}
     #logo img:hover{width: 90%;;}
-
+    #menu{
+        width: 100%;
+        margin-top: 3vw;
+        padding: 0;
+    }
     #menu ul li{
         background: none;
         font-size: 5vw;
@@ -307,44 +311,29 @@ footer ul li{
         width: 100%;
         margin: 0;
         padding: 3vw 0;
+        background: rgb(0, 0, 0, 0.6);
     }
-    #menu ul li:nth-child(2){background: none; font-size: 5vw; padding: 3vw 0; margin: 0; width: 100%;letter-spacing: 0;}
     #menu ul li:hover{
         background: none;
-        font-size: 5vw;
-        text-align: center;
-        transition: 1s;
-        border-top: 1px solid #fff;
-        width: 100%;
         margin: 0;
         padding: 3vw 0;
     }
-    #menu ul li:nth-child(2):hover{background: none; font-size: 5vw; padding: 3vw 0; width: 100%;letter-spacing: 0; margin: 0;}
-    #menu ul{
-        display: none;
-        position: absolute;
-        top: 64px;
-        margin: 0;
-        left: 0;
-        background: rgba(0, 0, 0);
-        padding: 0;
-        letter-spacing: 0;
-        width: 100%;
-    }
+    #menu ul{display: none;}
     #menuIcon{
-        width: 40px;
+        margin-top: 3vw;
+        width: 13%;
         transition: 1s;
-        display: block;
+        display: initial;
         float: right;
+        margin-right: 3vw;
     }
     #head{
         z-index: 2;
         position: fixed;
         vertical-align: top;
-        padding: 3vw 3vw 0vw 3vw;
         background: rgba(0, 0, 0);
         width: 100%;
-        height: 10%;
+        height: 11%;
     }
     #historia p, #historia video{
         display: block;
@@ -353,9 +342,9 @@ footer ul li{
     .none{display: block; margin: 0 auto;}
     #historia video:nth-child(3){display: none;}
     .logoAct{
-        width: 40vw;
+        margin-top: 5vw;
+        width: 45%;
         border-right: 0;
-        margin-top: 2vw;
         float: left;
     }
     #tile{display: block; position: absolute; width: 100%; bottom:0;}
@@ -393,10 +382,11 @@ footer ul li{
     .btn{
         display: absolute;
         bottom: 10px;
-        font-size: 12vw;
-        background-size: 85%;
-        padding-top: 10px;
+        font-size: 10vw;
+        background-size: 100%;
+        padding-top: 13px;
         z-index: 1;
+        width: 80%;
     }
     #descricao{
         font-size: 4vw;
@@ -447,7 +437,11 @@ footer ul li{
     }
     #premios{height: 585px;}
     .brush2{margin-bottom: -71vw;}
+    footer ul li{
+        width: 20%;
+    }
 }
+
 @media screen and (min-width: 1370px){
     #trilhe{width: 50%;}
     #historia p{
@@ -502,7 +496,7 @@ footer ul li{
     #menu ul li{
         background-position: center center;
         background-size: 100%;
-        width: 18%;
+        width: 24%;
         font-size: 2.3vw;
         padding:10px 0px 10px 0px;
         transition: 1s width;
@@ -510,19 +504,7 @@ footer ul li{
     #menu ul li:hover{
         letter-spacing: 0;
         padding:10px 0px 10px 0px;
-        width: 20%;
-    }
-    #menu ul li:nth-child(2){
-        font-size: 3.2vw;
-        padding:10px 0 10px 0;
-        background-position: center center;
-        background-size: 100%;
-        width: 23%;
-    }
-    #menu ul li:nth-child(2):hover{
-        padding:10px 0 10px 0;
-        letter-spacing: 0;
-        width: 26%;
+        width: 25%;
     }
     #linha2 img{
         width: 1320px;
@@ -536,9 +518,10 @@ footer ul li{
     }
     #frase{padding-top: 7vw;}
     .btn{
-        background-size: 28%;
+        background-size: 100%;
         padding-top: 10px;
         height: 165px;
+        width: 30%;
     }
     #historia{padding: 4vw 0}
     #inimigos{
@@ -550,12 +533,13 @@ footer ul li{
         bottom: 70px;
     }
 }
+
 @media screen and (min-width: 400px) and (max-height: 823px){
     #menu ul{top: 74px;}
     #menuIcon{width: 50px;}
     #premios{height: 665px;}
 }
-@media screen and (min-width: 1280px) and (min-height: 710px){
+@media screen and (min-width: 1280px) and (max-height: 730px){
     #inicio{
         background-position: 55% 100%;
         background-size: 120%;
@@ -588,7 +572,56 @@ footer ul li{
     #frase{padding-top: 86.5vw;}
     #premios{height: 600px;}
     .brush2{margin-bottom: -68vw;}
+    #head{
+        height: 9%;
+    }
 }
+@media screen and (width: 411px) and (height: 823px){
+    #head{height: 9.5%;}
+    #menuIcon{margin-top: 3.5vw;}
+}
+@media screen and (width: 768px) and (max-height: 1030px){
+    #frase{padding-top: 50vw;}
+    #head{height: 13.5%;}
+    #menuIcon{margin-top: 3vw; width: 12%;}
+    #historia{
+        padding: 3vw;
+    }
+    #historia iframe{
+        margin: 2vw 0 0vw 0;
+        width: 80%;
+        height: 400px;
+    }
+    #premios{
+        height: 112%;
+    }
+    #chara, #circle{
+        top: 500px;
+        left: 100px;
+    } 
+    #historia p, #historia video{
+        padding: 0 5vw;
+        font-size: 4vw;
+    }
+    #linha{margin: 3vw 0;}
+    .ajustePlay{
+        font-size: 10vw;
+        top: 35%;
+        padding: 30px;
+        left: 115%;
+    }
+    .ajustePlay:hover{
+        font-size: 10vw;
+        top: 35%;
+        padding: 30px;
+        left: 115%;
+    }
+    #videoIni iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
 ::-webkit-scrollbar-track {
     background-color:#000;
 }
